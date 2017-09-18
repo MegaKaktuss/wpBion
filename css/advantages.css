@@ -1,0 +1,102 @@
+.HomeAdvantages {
+	min-height: 639px;
+	padding-top: 61px;
+	text-align: center;
+}
+.HomeAdvantages-title {
+	color: white;
+	font-size: 26px;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+}
+
+.HomeAdvantages-content {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	max-width: 1027px;
+	max-height: 360px;
+	margin: 0 auto;
+	margin-bottom: 79px;
+	counter-reset: section;
+}
+@media screen and (max-width: 1045px){
+	.HomeAdvantages-content{
+		flex-direction: row;
+		justify-content: space-around;
+		max-height: 750px;
+	}
+	.HomeAdvantages{
+		min-height: 980px;
+	}
+}
+.HomeAdvantages-content .menu-item {
+	display: flex;
+	align-items: center;
+	background-color: white;
+	width: 489px;
+	height: 70px;
+	margin: 10px 12px;
+	font-size: 14px;
+	font-weight: 500;
+	padding-left: 21px;
+	transition: 0.3s;
+	position: relative;
+	cursor: pointer;
+}
+
+.HomeAdvantages-content .menu-item a{
+	display: block;
+	padding: 30px 164px 30px 0;
+}
+.HomeAdvantages-content .menu-item::after{
+	content: "";
+	display: inline-block;
+	width: 17px;
+	height: 9px;
+	background: url('../img/advantages-arrow.png');
+	position: absolute;
+    right: 31px;
+    top: 33px;
+}
+.HomeAdvantages-content .menu-item:hover::after{
+	content: "";
+	display: inline-block;
+	width: 36px;
+	height: 9px;
+	background: url('../img/advantages-arrow-hoover.png');
+	position: absolute;
+    right: 31px;
+    top: 33px;
+}
+.HomeAdvantages-content .menu-item a:visited, .HomeAdvantages-content .menu-item a:active{
+	display: block;
+	color: #000000;
+
+}
+
+.HomeAdvantages-content .menu-item::before {
+	counter-increment: section;
+	content: "0" counter(section) " ";
+	margin-right: 19px;
+	font-size: 26px;
+	font-weight: 400;
+}
+.HomeAdvantages-content .menu-item::after {
+
+}
+.HomeAdvantages-content .menu-item:hover {
+	background-color: rgb(251, 184, 42);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	transition: 0.5s;
+}
+
+a.HomeAdvantages-button{
+	color: #000;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	padding: 14px 69px;
+	background-color: rgb(251, 184, 42);
+}

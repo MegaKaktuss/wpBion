@@ -1,0 +1,93 @@
+.HomeNews {
+	min-height: 536px;
+	margin-top: -4px;
+	padding-top: 65px;
+}
+.HomeNews-title {
+	display: flex;
+	justify-content: space-between;
+	max-width: 740px;
+	height: 70px;
+	background-color: rgb(251, 184, 42);
+	align-items: center;
+	padding: 0 30px 0 33px;
+	margin: 0 auto;
+}
+.HomeNews-title h1 {
+	color: rgb(17, 17, 17);
+	font-size: 26px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.HomeNews-title .ViewAll-news {
+	color: rgb(17, 17, 17);
+	font-size: 12px;
+	font-weight: 500;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+.HomeNews-content {
+	max-width: 740px;
+	background-color: #fff;
+	margin: 0 auto;
+	padding: 0 35px;
+	position: relative;
+}
+.NewsContent-item {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	width: 100%;
+	height: 85px;
+	border-bottom: 1px solid rgb(221, 221, 221);
+}
+.NewsContent-item::after {
+  content: "";
+  background: url('../img/advantages-arrow.png');
+  display: inline-block;
+  position: absolute;
+  width: 17px;
+  height: 9px;
+  right: 37px;
+}
+.NewsContentItem-date {
+	color: rgb(251, 184, 42);
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 30px;
+	width: 90px;
+	border-right: 1px solid rgb(221, 221, 221);
+	padding: 12px 0 12px 0;
+}
+.NewsContentItem-date span {
+	font-size: 14px;
+	vertical-align: middle;
+	padding-left: 8px;
+}
+.NewsContentItem-caption {
+	color: rgb(34, 34, 34);
+	font-size: 14px;
+	font-weight: 500;
+	padding-left: 21px;
+
+}
+
+@media screen and (max-width: 680px){
+	.HomeNews-title h1 {
+		font-size: 20px;
+	}
+	.NewsContentItem-date{
+		font-size: 22px;
+	}
+	.NewsContentItem-date span{
+		font-size: 14px;
+	}
+	.NewsContentItem-caption {
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 555px){
+	.NewsContentItem-caption {
+		font-size: 10px;
+	}
+}

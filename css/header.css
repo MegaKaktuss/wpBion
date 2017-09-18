@@ -1,0 +1,202 @@
+/* -----MAIN STYLES----- */
+html{
+	font-family: "Fira Sans", sans-serif;
+	font-weight: normal;
+	font-size: 10px;
+}
+body{
+	margin: 0 auto;
+	max-width: 1280px;
+}
+*{
+	box-sizing: border-box;
+}
+
+/* -----HEADER STYLES----- */
+
+.Header{
+	position: relative;
+}
+
+.Header section:first-child{
+	display: flex;
+	position: absolute;
+	z-index: 1000;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0 22px;
+
+}
+.HeaderLogo{
+	margin-top: 16px;
+}
+.HeaderNav a, a.HeaderPriceBtn {
+  	color: #fff;
+  	text-transform: uppercase;
+}
+.HeaderNav{
+  	display: flex;
+  	justify-content: flex-end;
+  	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  	width: 100%;
+  	max-width: 929px;
+  	font-size: 13px;
+  	font-weight: 400;
+  	line-height: 16px;
+  	margin: 1px 24px 0 33px;
+  	padding: 25px 0 25px 0;
+  	line-height: 16px;
+}
+.menu-xl {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #2aa438;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Ubuntu-Regular',sans-serif;
+  font-size: 3rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.menu-xl .navigation-close {
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  cursor: pointer;
+}
+.menu-xl ul {
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.menu-xl ul li {
+  margin: 20px 0;
+}
+.menu-xl ul li a {
+  display: block;
+  color: #fbb82a;
+  text-transform: uppercase;
+}
+.menu-xl-active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+.more {
+  -ms-flex-preferred-size: 345px;
+      flex-basis: 345px;
+}
+
+@media screen and (max-width: 925px){
+	.HeaderNav{
+    display: none;
+	}
+	.Header section:first-child{
+		justify-content: space-between;
+	}
+	/*---Burger---*/
+	.Header section:first-child .nav-link {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: auto 20px;
+    position: relative;
+  }
+  .Header section:first-child .nav-line {
+    display: block;
+    background-color: #fff;
+    width: 30px;
+    height: 2px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    margin-left: -10px;
+  }
+  .Header section:first-child .nav-line:before {
+    content: '';
+    display: block;
+    background-color: #fff;
+    width: 30px;
+    height: 2px;
+    position: relative;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  .Header section:first-child .nav-line:after {
+    content: '';
+    display: block;
+    background-color: #fff;
+    width: 30px;
+    height: 2px;
+    position: relative;
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+  }
+}
+
+
+.NavMenu .menu-item{
+	display: inline-block;
+	margin-left: 26px;
+}
+
+.HeaderPriceBtn{
+	display: inline-block;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	font-family: "Fira Sans", sans-serif;
+ 	font-size: 13px;
+ 	font-weight: 500;
+ 	line-height: 16px;
+  	padding: 11px 18px 10px 21px;
+  	white-space: nowrap;
+  	line-height: 16px;
+}
+
+.Header section:last-child{
+	position: relative;
+}
+
+.Header section:last-child{
+	max-width: 1280px;
+	min-height: 660px;
+	padding-top: 339px;
+}
+.HeaderIntro{
+	max-width: 450px;
+	min-height: 160px;
+	padding: 62px 0 0px 54px;
+}
+.HeaderIntro-title {
+  color: rgb(251, 184, 42);
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-bottom: 19px;
+}
+.HeaderIntro-info {
+  color: rgb(255,255,255);
+  font-size: 14px;
+  font-weight: 400;
+}

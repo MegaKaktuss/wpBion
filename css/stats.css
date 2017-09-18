@@ -1,0 +1,62 @@
+.HomeStats {
+	display: flex;
+	flex-wrap: wrap;
+}
+.HomeStats-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 33.3%;
+	border: 1px solid rgb(221, 221, 221);
+	height: 238px;
+}
+.StatsItem-content {
+	display: flex;
+}
+.StatsItem-content h2{
+	color: rgb(42, 164, 56);
+	font-size: 64px;
+	font-weight: 500;
+	line-height: 64px;
+}
+.StatsItemContent-text {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 64px;
+	margin-left: 11px;
+}
+.StatsItemContent-text h3 {
+	color: rgb(34, 34, 34);
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 16px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.StatsItemContent-text p {
+	max-width: 92px;
+	color: rgb(34, 34, 34);
+	font-size: 12px;
+	font-weight: 300;
+}
+a.StatsContent-button {
+	color: white;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	padding: 17px 63px;
+	background-color: rgb(42, 164, 56);
+	white-space: nowrap;
+}
+
+@media screen and (max-width: 860px){
+	.HomeStats-item{
+		width: 50%;
+	}
+}
+@media screen and (max-width: 550px){
+	.HomeStats-item{
+		width: 100%;
+	}
+}

@@ -1,0 +1,56 @@
+.HomeDiscounts {
+	min-height: 495px;
+	text-align: center;
+	padding-top: 60px;
+}
+.HomeDiscounts-title {
+	color: rgb(34, 34, 34);
+	font-size: 26px;
+	font-weight: 500;
+	text-transform: uppercase;
+	padding-bottom: 13px;
+
+}
+.HomeDiscounts-info {
+	color: rgb(34, 34, 34);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	margin-bottom: 68px;
+
+}
+.HomeDiscounts-statistics {
+	display: flex;
+	flex-wrap: nowrap;
+	margin: 0 auto;
+	max-width: 735px;
+	margin-bottom: 87px;
+}
+.DiscountsStatistics-item:nth-child(2n) {
+	border-left: 1px solid rgb(221, 221, 221);
+	border-right: 1px solid rgb(221, 221, 221);
+}
+.DiscountsStatistics-item {
+	text-align: center;
+	width: 33.3%;
+}
+.DiscountsStatistics-item h1 {
+	color: rgb(42, 164, 56);
+	font-size: 64px;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-bottom: 13px;
+}
+.DiscountsStatistics-item p {
+	color: rgb(34, 34, 34);
+	font-size: 14px;
+	font-weight: 500;
+}
+a.HomeDiscount-button {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	padding: 14px 81px;
+	background-color: rgb(42, 164, 56);
+}
